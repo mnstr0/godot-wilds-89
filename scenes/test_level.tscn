@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnc6rp8njrcd6"]
+
+[ext_resource type="Texture2D" uid="uid://dmeb5hq5t8e4b" path="res://sprite sheets/menuBorderTilesheet.png" id="1_paw1w"]
+[ext_resource type="Texture2D" uid="uid://blcprjxhsf208" path="res://sprite sheets/Ingredients.png" id="2_j6w7d"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x4b8f"]
+texture = ExtResource("1_paw1w")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tmr53"]
+texture = ExtResource("2_j6w7d")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qcd3b"]
+tile_size = Vector2i(32, 32)
+sources/2 = SubResource("TileSetAtlasSource_x4b8f")
+sources/3 = SubResource("TileSetAtlasSource_tmr53")
+
+[node name="TestLevel" type="TileMapLayer"]
+tile_set = SubResource("TileSet_qcd3b")
