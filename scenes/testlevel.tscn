@@ -35,7 +35,7 @@ sources/0 = SubResource("TileSetAtlasSource_6ewva")
 [node name="InfininteBackground" type="CanvasLayer" parent="."]
 layer = -1
 
-[node name="Beige" type="ColorRect" parent="InfininteBackground"]
+[node name="Light" type="ColorRect" parent="InfininteBackground"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -43,8 +43,20 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.92156863, 0.8980392, 0.80784315, 1)
 
+[node name="InfininteForeground" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="Shadow" type="ColorRect" parent="InfininteForeground"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.29411766, 0.2784314, 0.36078432, 1)
+
 [node name="TrekWindow" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AADz//r/AAAAAAEAAADz//v/AAAAAAEAAAD0//v/AAAAAAEAAAD0//z/AAAAAAEAAAD0//3/AAAAAAEAAAD0//7/AAAAAAEAAAD1//7/AAAAAAEAAAD1////AAAAAAEAAAD1/wAAAAAAAAEAAAD2/wAAAAAAAAEAAAD2/wEAAAAAAAEAAAD3/wIAAAAAAAEAAAD3/wMAAAAAAAEAAAD4/wMAAAAAAAEAAAD5/wMAAAAAAAEAAAD5/wQAAAAAAAEAAAD6/wQAAAAAAAEAAAD6/wUAAAAAAAEAAAD7/wUAAAAAAAEAAAD8/wUAAAAAAAEAAAD9/wUAAAAAAAEAAAD+/wUAAAAAAAEAAAD+/wQAAAAAAAEAAAD//wQAAAAAAAEAAAAAAAQAAAAAAAEAAAAAAAMAAAAAAAEAAAABAAMAAAAAAAEAAAACAAMAAAAAAAEAAAACAAIAAAAAAAEAAAADAAIAAAAAAAEAAAADAAEAAAAAAAEAAAADAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAAEAP//AAAAAAEAAAAEAP7/AAAAAAEAAAADAP7/AAAAAAEAAAADAP3/AAAAAAEAAAADAPz/AAAAAAEAAAACAPz/AAAAAAEAAAACAPv/AAAAAAEAAAA=")
 tile_set = SubResource("TileSet_jiwm1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1229, 280)
